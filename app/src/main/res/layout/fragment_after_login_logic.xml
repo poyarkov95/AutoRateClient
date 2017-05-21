@@ -1,0 +1,43 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/after_login_fragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.user.userauthorisation.afterloginlogic.AfterLoginLogicFragment">
+
+    <ScrollView
+        android:id="@+id/after_login_fragment_sv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cont_after_login_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/after_login_fragment_image_view"
+            android:layout_marginTop="16dp"
+            android:gravity="center"/>
+        <Button
+            android:id="@+id/show_all_auto_services_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/show_auto_services"
+            android:layout_below="@id/after_login_fragment_image_view"/>
+        <Button
+            android:id="@+id/contact_us_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/contact_us"
+            android:layout_below="@id/show_all_auto_services_button"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</FrameLayout>

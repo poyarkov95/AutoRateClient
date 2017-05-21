@@ -1,0 +1,70 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context="com.example.user.userauthorisation.autoservice_detail_activity.AutoServiceDetailFragment">
+
+    <ScrollView
+        android:id="@+id/scv_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/cont_create_account_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:paddingBottom="16dp">
+
+            <TextView
+                android:id="@+id/auto_service_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center" />
+
+            <ImageView
+                android:id="@+id/auto_service_image_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/auto_service_name_tv" />
+
+            <Button
+                android:id="@+id/look_at_map_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/look_at_map"
+                android:layout_below="@id/auto_service_image_view" />
+
+            <Button
+                android:id="@+id/go_to_web_page_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/go_to_web_page"
+                android:layout_below="@id/look_at_map_button" />
+
+            <Button
+                android:id="@+id/call_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/make_a_call"
+                android:layout_below="@id/go_to_web_page_button" />
+
+            <Button
+                android:id="@+id/show_all_auto_services_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/show_all_services"
+                android:layout_below="@id/call_button" />
+
+            <Spinner
+                android:id="@+id/detail_spinner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/show_all_auto_services_button">
+            </Spinner>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</FrameLayout>
